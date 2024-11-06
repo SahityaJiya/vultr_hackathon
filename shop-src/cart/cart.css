@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.top-section {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-section a {
+    color: #ffcb2c;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.top-bottom-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+}
+
+.logo p {
+    font-size: 1.5em;
+    color: #ffcb2c;
+}
+
+.cart-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.cart-left, .cart-right {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 13px;
+}
+
+.cart-left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f7f7f7;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 13px;
+}
+
+.section img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart-category, .cart-product-name, .cart-product-price, .card-product-quantity, .cart-remove-button {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.card-product-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-product-quantity .plus, .card-product-quantity .minus {
+    cursor: pointer;
+    background-color: #ffcb2c;
+    color: #333;
+    padding: 5px;
+    border-radius: 9px;
+    font-size: 1.2em;
+    user-select: none;
+}
+
+.cart-remove-button {
+    cursor: pointer;
+    color: #d9534f;
+    font-weight: bold;
+    border: none;
+    background: none;
+    border-radius: 9px;
+}
+
+.cart-selected-offer-summary {
+    padding: 15px;
+    background-color: #ffcb2c;
+    color: #333;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}

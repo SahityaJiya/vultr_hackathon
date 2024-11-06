@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .order-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .product-list {
+    width: 60%;
+  }
+  
+  .product-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .quantity {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .summary {
+    width: 35%;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    background-color: #fafafa;
+    border-radius: 8px;
+  }
+  
+  .summary p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #checkout, .cancel-button {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  #checkout {
+    background-color: #28a745;
+  }
+  
+  #checkout:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  #order-form {
+    margin-top: 30px;
+  }
+  
+  form h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="leaves">
+            <div class="set">
+                <div><img src="./img/leaf_01.png" alt="leaf"></div>
+                <div><img src="./img/leaf_02.png" alt="leaf"></div>
+                <div><img src="./img/leaf_03.png" alt="leaf"></div>
+                <div><img src="./img/leaf_04.png" alt="leaf"></div>
+                <div><img src="./img/leaf_01.png" alt="leaf"></div>
+                <div><img src="./img/leaf_02.png" alt="leaf"></div>
+                <div><img src="./img/leaf_03.png" alt="leaf"></div>
+                <div><img src="./img/leaf_04.png" alt="leaf"></div>
+            </div>
+        </div>
+        <img src="./img/bg.jpg" class="bg" alt="background">
+        <img src="./img/girl.png" class="girl" alt="girl">
+        <img src="./img/trees.png" class="trees" alt="trees">
+
+        <!-- Sign In Form -->
+        <div class="login" id="loginForm">
+            <h2>Sign In</h2>
+            <div class="inputBox">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="inputBox">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Login" id="btn">
+            </div>
+            <div class="group">
+                <a href="#" onclick="toggleForm('forgotPasswordForm')">Forgot Password</a>
+                <a href="#" onclick="toggleForm('signUpForm')">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="login" id="signUpForm" style="display: none;">
+            <h2>Sign Up</h2>
+            <div class="inputBox">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="inputBox">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Sign Up" id="btn">
+            </div>
+            <div class="group">
+                <a href="#" onclick="toggleForm('loginForm')">Sign In</a>
+            </div>
+        </div>
+
+        <!-- Forgot Password Form -->
+<div class="login" id="forgotPasswordForm" style="display: none;">
+    <h2>Forgot Password</h2>
+    <p>Please enter your email address to reset your password.</p>
+    <div class="inputBox">
+        <input type="email" id="resetEmail" placeholder="Email">
+    </div>
+    <div class="inputBox">
+        <input type="button" value="Send Reset Link" id="resetBtn" onclick="sendResetLink()">
+    </div>
+    <div class="group">
+        <a href="#" onclick="toggleForm('loginForm')">Back to Sign In</a>
+    </div>
+    <p id="resetMessage" style="display: none; color: green;">Reset link sent! Check your email.</p>
+</div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

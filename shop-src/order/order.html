@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Order Summary</h1>
+
+    <!-- Product List Section -->
+    <div class="order-section">
+      <div class="product-list">
+        <div class="product-item" data-price="49.99">
+          <p>Product Name 1</p>
+          <p>$49.99</p>
+          <input type="number" value="1" min="1" class="quantity">
+        </div>
+        <div class="product-item" data-price="29.99">
+          <p>Product Name 2</p>
+          <p>$29.99</p>
+          <input type="number" value="1" min="1" class="quantity">
+        </div>
+        <div class="product-item" data-price="19.99">
+          <p>Product Name 3</p>
+          <p>$19.99</p>
+          <input type="number" value="1" min="1" class="quantity">
+        </div>
+      </div>
+
+      <!-- Summary Section -->
+      <div class="summary">
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Shipping: $<span id="shipping">5.00</span></p>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button id="checkout">Proceed to Checkout</button>
+        <button id="cancel" class="cancel-button">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Order Form Section -->
+    <form id="order-form">
+      <h2>Shipping Information</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" required>
+
+      <label for="address">Address</label>
+      <input type="text" id="address" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <h2>Payment Information</h2>
+      <label for="card">Card Number</label>
+      <input type="text" id="card" required>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <script src="order.js"></script>
+</body>
+</html>

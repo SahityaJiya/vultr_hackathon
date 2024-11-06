@@ -1,0 +1,388 @@
+{
+    "_id": "sort-by-select",
+    "list": [
+        {
+            "key": "New Arrivals"
+        },
+        {
+            "key": "Best Seller"
+        },
+        {
+            "key": "Discount"
+        },
+        {
+            "key": "price"
+        },
+        {
+            "key": "Cost Per Diaper"
+        },
+        {
+            "key": "Name"
+        },
+        {
+            "key": "Top Rated"
+        }
+    ],
+    "filter": [
+        {
+            "key": "TYPE",
+            "key2": [
+                {
+                    "key": "Pant Style"
+                },
+                {
+                    "key": "Taped Diapers"
+                },
+                {
+                    "key": "Monthly Pack"
+                },
+                {
+                    "key": "Cloth Feel Diaper"
+                }
+            ]
+        },
+        {
+            "key": "BRANDS",
+            "key2": [
+                {
+                    "key": "Aleva Naturals"
+                },
+                {
+                    "key": "Alter"
+                },
+                {
+                    "key": "Babelois"
+                },
+                {
+                    "key": "BabieCorn"
+                },
+                {
+                    "key": "Allter "
+                },
+                {
+                    "key": "Babyhug "
+                },
+                {
+                    "key": "Huggies "
+                },
+                {
+                    "key": "Pampers "
+                },
+                {
+                    "key": "MamyPoko "
+                },
+                {
+                    "key": "Teddyy "
+                },
+                {
+                    "key": "Little's "
+                },
+                {
+                    "key": "R for Rabbit "
+                },
+                {
+                    "key": "Wowper "
+                },
+                {
+                    "key": "Luv Lap "
+                },
+                {
+                    "key": "Aleva Naturals "
+                },
+                {
+                    "key": "Babelois "
+                },
+                {
+                    "key": "BABIECORN "
+                },
+                {
+                    "key": "Babum "
+                },
+                {
+                    "key": "Baby Bear "
+                },
+                {
+                    "key": "Baby Jalebi "
+                },
+                {
+                    "key": "Bambo Nature "
+                },
+                {
+                    "key": "Bella "
+                },
+                {
+                    "key": "Bonfino "
+                },
+                {
+                    "key": "Bummy Pants "
+                },
+                {
+                    "key": "Bumtum "
+                },
+                {
+                    "key": "Champs "
+                },
+                {
+                    "key": "Chrish "
+                },
+                {
+                    "key": "Chuchumama "
+                },
+                {
+                    "key": "Cuddles "
+                },
+                {
+                    "key": "Deedry "
+                },
+                {
+                    "key": "Doobidoo "
+                },
+                {
+                    "key": "Fabie Baby "
+                },
+                {
+                    "key": "Himalaya Babycare "
+                },
+                {
+                    "key": "Honey Bunny "
+                },
+                {
+                    "key": "Kim & Kimmy "
+                },
+                {
+                    "key": "Little Angel "
+                },
+                {
+                    "key": "Longlife "
+                },
+                {
+                    "key": "Mee Mee "
+                },
+                {
+                    "key": "Meechu "
+                },
+                {
+                    "key": "Mother Sparsh Baby "
+                },
+                {
+                    "key": "Mylo "
+                },
+                {
+                    "key": "Niine "
+                },
+                {
+                    "key": "Nino Bambino "
+                },
+                {
+                    "key": "OYO BABY "
+                },
+                {
+                    "key": "Predo Baby "
+                },
+                {
+                    "key": "Pro-ease Lovingle "
+                },
+                {
+                    "key": "Pureborn "
+                },
+                {
+                    "key": "Rascal + Friends "
+                },
+                {
+                    "key": "Snuggy "
+                },
+                {
+                    "key": "Snugkins "
+                },
+                {
+                    "key": "Super Cute "
+                },
+                {
+                    "key": "SuperBottoms "
+                },
+                {
+                    "key": "Toddles "
+                },
+                {
+                    "key": "Wobbly "
+                }
+            ]
+        },
+        {
+            "key": "PRICE",
+            "key2": [
+                {
+                    "key": "0 to 250 "
+                },
+                {
+                    "key": "250 to 500 "
+                },
+                {
+                    "key": "500 to 1000 "
+                },
+                {
+                    "key": "1000 to 2000 "
+                },
+                {
+                    "key": "2000 to 3000 "
+                },
+                {
+                    "key": "3000 to 4000 "
+                },
+                {
+                    "key": "4000 to 5000 "
+                },
+                {
+                    "key": "5000 and above "
+                }
+            ]
+        },
+        {
+            "key": "DISCOUNT",
+            "key2": [
+                {
+                    "key": "Upto 10%"
+                },
+                {
+                    "key": "10%-20% "
+                },
+                {
+                    "key": "20%-30% "
+                },
+                {
+                    "key": "30%-40% "
+                },
+                {
+                    "key": "More than 40% "
+                }
+            ]
+        },
+        {
+            "key": "Colors",
+            "key2": [
+                {
+                    "key": "White"
+                },
+                {
+                    "key": "Multi Color"
+                },
+                {
+                    "key": "Blue"
+                },
+                {
+                    "key": "Offwhite"
+                },
+                {
+                    "key": "Yellow"
+                },
+                {
+                    "key": "Red"
+                },
+                {
+                    "key": "Dark Green"
+                },
+                {
+                    "key": "Pink"
+                },
+                {
+                    "key": "Purple"
+                },
+                {
+                    "key": "Orange"
+                },
+                {
+                    "key": "Green"
+                },
+                {
+                    "key": "Purple/Violet"
+                },
+                {
+                    "key": "Grey"
+                },
+                {
+                    "key": "Mint"
+                },
+                {
+                    "key": "Maroon"
+                },
+                {
+                    "key": "Aqua Blue"
+                },
+                {
+                    "key": "Silver"
+                },
+                {
+                    "key": "Black"
+                },
+                {
+                    "key": "Others"
+                },
+                {
+                    "key": "Off White/Cream"
+                }
+            ]
+        },
+        {
+            "key": "SUPER-SAVER",
+            "key2": [
+                {
+                    "key": "Show Super Saver"
+                }
+            ]
+        },
+        {
+            "key": "Size",
+            "key2": [
+                {
+                    "key": "Small (S) "
+                },
+                {
+                    "key": "Medium (M) "
+                },
+                {
+                    "key": "Large (L) "
+                },
+                {
+                    "key": "Extra Large (XL) "
+                },
+                {
+                    "key": "XX Large (XXL) "
+                },
+                {
+                    "key": "New Born / Extra Small (XS) "
+                },
+                {
+                    "key": "XXX Large (XXXL) "
+                }
+            ]
+        },
+        {
+            "key": "Ratings",
+            "key2": [
+                {
+                    "key": "5 "
+                },
+                {
+                    "key": "4 & More"
+                },
+                {
+                    "key": "3 & More"
+                },
+                {
+                    "key": "2 & More"
+                },
+                {
+                    "key": "1 & More "
+                }
+            ]
+        },
+        {
+            "key": "AVAILABILITY",
+            "key2": [
+                {
+                    "key": "Exclude Out of Stocks"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+* {
+margin : 0;
+padding: 0;
+box-sizing: border-box;
+font-family: system-ui;
+}
+
+html,body {
+height: 100%;
+width: 100%;
+}
+
+.contact-main{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
+    height: 75vh;
+    width: 100vw;
+}
+
+.contact-left{
+    width: 50%;
+}
+.contact-right{
+    width: 50%;
+}
+
+
+.contact-right iframe{
+height: 100%;
+width: 90%;
+}
+
+.contact-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.contact-left form textarea{
+    width: 100%;
+    padding: 10px;
+}
+.contact-left form input{
+    width: 100%;
+    padding: 10px;
+
+}
+.contact-left form{
+    width: 90%;
+}
+
+
+
+.contact-left form button a{
+    text-decoration: none;
+    color: black;
+}
+.contact-left form button{
+    display: block;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}

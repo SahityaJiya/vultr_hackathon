@@ -1,0 +1,503 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+
+    font-size: 16px;
+    color: #333;
+}
+.category-container{
+
+    background-color: #0cf7d7;
+}
+
+.sort-by-select {
+    margin-bottom: 20px;
+}
+
+.sort-by-select select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filter {
+    width: 20vw;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.filter > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.filter h3 {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filter a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.filter img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.sub-categories {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.pin-verify {
+    margin: 20px 0;
+}
+
+.pin-verify span {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.pin-verify img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.pin-verify input {
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.checkPinCode {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pin-rejected {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.pin-verified {
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+}
+
+.category-info-display {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+height: 35vh;
+overflow: hidden;
+width: 50vw;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-info-display h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.category-info-display p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.category-choices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-choices-left div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.category-choices-left h5 {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.category-choices-left img {
+    width: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.category-choices-right button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.diaper-details {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.diaper-details h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.diaper-details h6 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .filter {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sort-by-select select {
+        width: 100%;
+    }
+
+    .category-choices {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .category-choices-right {
+        margin-top: 10px;
+    }
+}
+.filter-by {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 5px;
+}
+
+.filter-by:hover {
+    color: #007bff;
+}
+
+.filter-by img {
+    transition: transform 0.3s;
+}
+
+.filter-by img.rotate {
+    transform: rotate(90deg);
+}
+/* 
+.sub-categories {
+    
+    padding-left: 20px;
+    font-size: 14px;
+    transition: max-height 0.3s ease;
+}
+
+.sub-categories.show {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+}
+
+.sub-categories div {
+    padding: 5px 0;
+}
+
+.sub-categories input[type="checkbox"] {
+    margin-right: 8px;
+} */
+.sub-categories-container{
+    max-height: 40vh;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    bottom: 1px solid black;
+}
+.clearButton{
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+/* General styling for scrollable containers */
+.scrollable {
+    max-height: 300px; /* Adjust the max height as needed */
+    overflow-y: auto;
+    scrollbar-width: thin; /* for Firefox */
+    scrollbar-color: #bbb #f9f9f9; /* for Firefox */
+}
+
+/* For Chrome, Edge, Safari */
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 4px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+/* Specific elements where scroll is needed */
+.sort-by-select select {
+    max-height: 150px; /* Limit the height of the dropdown */
+    overflow-y: auto;
+    width: 100%;
+}
+
+.sub-categories-container {
+    max-height: 200px; /* Set height for scrolling */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    scrollbar-width: thin;
+}
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++carousel+++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.product-card {
+    background-color: antiquewhite;
+    min-width: 200px;
+    scale: 0.7;
+    text-align: left;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px black;
+    filter: drop-shadow(2px 2px 10px rgb(0, 4, 7));
+    padding: 20px;
+    line-height: 30px;
+
+
+}
+
+.product-card .category {
+    width: 40%;
+    font-size: 0.9em;
+    text-align: center;
+    color: white;
+    border-radius: 9999px;
+    padding: 8px 16px;
+    background: purple;
+    margin-bottom: 5em;
+}
+
+.product-card .rating img {
+    height: 15px;
+    width: 15px;
+}
+
+.strike-rate {
+    text-decoration: line-through;
+    font-size: 1.2em;
+}
+
+.add-to-cart {
+    margin-top: 30px;
+    display: flex;
+    width: 85%;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.add-to-cart img {
+    height: 24px;
+    width: 24px;
+}
+
+.selected-quantity span {
+    padding: 8px 16px;
+    border: 1px solid black;
+}
+
+.selected-quantity .plus {
+    cursor: pointer;
+}
+
+.selected-quantity .minus {
+    cursor: pointer;
+}
+
+
+
+
+.product-grid {
+    display: flex;
+    background-color: #F5F5F5;
+}
+
+
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.add-to-cart {
+    padding: 10px;
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.carousel {
+    position: relative;
+    width: 95%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    height: 95vh;
+}
+
+.carousel>div:hover {
+    scale: 0.72;
+}
+
+.carousel .prev {
+    position: absolute;
+    z-index: 1;
+    height: 5vh;
+    
+    left: 10;
+    cursor: pointer;
+
+    border-radius: 50%;
+}
+
+.carousel .next {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+
+    border-radius: 50%;
+    height: 5vh;
+
+    cursor: pointer;
+
+}
+
+.carousel .prev:hover {
+    scale: 0.9;
+}
+
+.carousel .next:hover {
+    scale: 0.9;
+}
+
+
+
+/* +++++++++++++++++++++++ koala work ++++++++++++++++++++++++++++++++++++++++++++++++ */
+.pin-verified img{
+    cursor: pointer;
+}
+.pin-verify-input{
+    display: flex;
+
+}
+.pin-verify input{
+    width: 15em;
+}
+.category-choices-left{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+/* +++++++++++++++++++++++ end of koala work ++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.category-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    border: 4px solid black;
+}
+.delivery-parent{
+    width: 20vw;
+    height: 30vh;
+    padding: 1px;
+}
+
+.carousel-parent{
+    width: 50vw;
+}
+
+h5{
+    margin-bottom: 0;
+}
