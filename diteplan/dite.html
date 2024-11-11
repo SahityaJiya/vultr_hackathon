@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolistiCare - Personalized Diet Plans</title>
+    <link rel="stylesheet" href="dite.css">
+</head>
+<body>
+    <header>
+        <h1>HolistiCare</h1>
+        <nav>
+            <ul>
+                <li><a href="#user-input">Get Your Diet Plan</a></li>
+                <li><a href="#recommendations">Doctor's Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="user-input">
+            <h2>Get Your Personalized Diet Plan</h2>
+            <form id="diet-form">
+                <label for="age-group">Age Group:</label>
+                <select id="age-group" required>
+                    <option value="">Select your age group</option>
+                    <option value="child">Child (0-12 years)</option>
+                    <option value="teen">Teen (13-19 years)</option>
+                    <option value="adult">Adult (20-59 years)</option>
+                    <option value="senior">Senior (60+ years)</option>
+                </select>
+
+                <label for="health-problem">Health Problem:</label>
+                <input type="text" id="health-problem" placeholder="Enter your health problem" required>
+
+                <button type="submit">Get Diet Plan</button>
+            </form>
+        </section>
+
+        <section id="diet-plan" style="display: none;">
+            <h2>Your Personalized Diet Plan</h2>
+            <div id="diet-plan-content"></div>
+        </section>
+
+        <section id="recommendations">
+            <h2>Doctor's Recommendations</h2>
+            <div class="recommendation-group">
+                <h3>Recommended Medicines</h3>
+                <ul id="medicine-list"></ul>
+            </div>
+            <div class="recommendation-group">
+                <h3>Recommended Fruits</h3>
+                <ul id="fruit-list"></ul>
+            </div>
+            <div class="recommendation-group">
+                <h3>Other Recommendations</h3>
+                <ul id="other-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HolistiCare. All rights reserved.</p>
+    </footer>
+
+    <script src="dite.js"></script>
+</body>
+</html>
