@@ -13,6 +13,7 @@ body {
 
 header {
     display: flex;
+    align-items: center;
     background-color: #4CAF50;
     color: white;
 }
@@ -22,7 +23,8 @@ header h1 {
 
 nav ul {
     padding: 12px;
-    margin-left: 40rem;
+    margin-left: 20rem;
+    display: flex;
 }
 
 nav ul li {
